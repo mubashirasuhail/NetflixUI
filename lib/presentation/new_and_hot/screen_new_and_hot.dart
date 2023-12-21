@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ScreenNewandHot extends StatelessWidget {
@@ -6,6 +5,8 @@ class ScreenNewandHot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text('fghj'),);
+    return const Scaffold(
+      body: Text('fghj'),
+    );
   }
 }

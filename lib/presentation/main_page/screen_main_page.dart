@@ -7,24 +7,26 @@ import 'package:ui_design_netflix/presentation/new_and_hot/screen_new_and_hot.da
 import 'package:ui_design_netflix/presentation/search/screen_search.dart';
 
 class ScreenMainpage extends StatelessWidget {
-   ScreenMainpage({super.key});
-final  pages=[
-  ScreenHome(),
-  ScreenNewandHot(),
-  FastLaugh(),
-  ScreenSearch(),
-  ScreenDownloads(),
-  
-];
+  ScreenMainpage({super.key});
+  final pages = [
+    ScreenHome(),
+    ScreenNewandHot(),
+    FastLaugh(),
+    ScreenSearch(),
+    ScreenDownloads(),
+  ];
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SafeArea(
-        child: ValueListenableBuilder(valueListenable: indexChangeNotifier, builder: (context,int index, _) {
-          return pages[index];
-        },),
+        child: ValueListenableBuilder(
+          valueListenable: indexChangeNotifier,
+          builder: (context, int index, _) {
+            return pages[index];
+          },
+        ),
       ),
-        bottomNavigationBar: BottomNavigation(),
+      bottomNavigationBar: BottomNavigation(),
     );
   }
 }

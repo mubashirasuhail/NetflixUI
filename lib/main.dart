@@ -18,16 +18,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-    primarySwatch: Colors.blue,
-    backgroundColor: Colors.black,
-    scaffoldBackgroundColor:backgroundColor,
-    fontFamily: GoogleFonts.magra().fontFamily,
-    textTheme: const TextTheme(
-      bodyText1: TextStyle(color: Colors.white),
-      bodyText2: TextStyle(color: Colors.white),
-    
-    ),
-       //colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue).copyWith(background: Colors.black)
+        primarySwatch: Colors.blue,
+        backgroundColor: Colors.black,
+        scaffoldBackgroundColor: backgroundColor,
+        fontFamily: GoogleFonts.magra().fontFamily,
+        textTheme: const TextTheme(
+          bodyText1: TextStyle(color: Colors.white),
+          bodyText2: TextStyle(color: Colors.white),
+        ),
+        //colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue).copyWith(background: Colors.black)
       ),
       home: ScreenMainpage(),
     );
